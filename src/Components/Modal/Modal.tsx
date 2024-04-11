@@ -4,13 +4,39 @@ import ButtonChips from "../ButtonChips/ButtonChips";
 import SelectMenu from "../SelectMenu/SelectMenu";
 
 type ModalPropType = {
-    isModalOpen: boolean;
-    setIsModalOpen: (val: boolean) => void;
-}
+  isModalOpen: boolean;
+  setIsModalOpen: (val: boolean) => void;
+  addNewproject: (val: any) => void;
+};
 
-const Modal = ({ isModalOpen , setIsModalOpen }: ModalPropType) => {
+const Modal = ({
+  isModalOpen,
+  setIsModalOpen,
+  addNewproject,
+}: ModalPropType) => {
+  const [timeline, setTimeline] = useState("");
+  const [formData, setFormData] = useState({
+    projectname: "",
+    projectManager: "",
+    resources: "",
+    projectTimeline: "",
+    Estimation: "",
+    startDate: new Date(),
+    endDate: new Date(),
+  });
 
-  const [timeline, setTimeline] = useState('');
+  const handleInputChange = (event: any) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleNewProject = () => {
+    addNewproject(formData);
+    setIsModalOpen(false);
+  };
 
   return (
     <div className="flex justify-center">
@@ -19,7 +45,7 @@ const Modal = ({ isModalOpen , setIsModalOpen }: ModalPropType) => {
         aria-hidden="true"
         tabIndex={-1}
         className="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 max-h-full bg-black bg-opacity-50"
-        style={{ display: isModalOpen ? 'flex' : 'none' }}
+        style={{ display: isModalOpen ? "flex" : "none" }}
       >
         <div className="relative p-4 w-1/3 max-h-full">
           <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -29,25 +55,65 @@ const Modal = ({ isModalOpen , setIsModalOpen }: ModalPropType) => {
               </h3>
             </div>
             <div className="p-4 md:p-5 space-y-4 bg-gray-100">
-            <div>
-                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Project name *</label>
-                <input type="text" id="first_name" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
-            </div>
               <div>
-                <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Project manager (PM)</h2>
-                <TabSelect />
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                  Project name *
+                </label>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="projectname"
+                  value={formData.projectname}
+                  onChange={handleInputChange}
+                  className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
               </div>
               <div>
-                <h2 className="block text-sm font-medium text-gray-900 dark:text-white">Resources</h2>
-                <ButtonChips />
+                <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                  Project manager (PM)
+                </h2>
+                <TabSelect 
+                  formData={formData}
+                  setFormData={setFormData} 
+                />
               </div>
               <div>
-                <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Project timeline</h2>
-                <SelectMenu timeline={timeline} setTimeline={setTimeline} />
+                <h2 className="block text-sm font-medium text-gray-900 dark:text-white">
+                  Resources
+                </h2>
+                <ButtonChips 
+                  formData={formData}
+                  setFormData={setFormData}
+                />
               </div>
               <div>
-                <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Estimation</h2>
-                <input type="text" id="first_name" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required placeholder="US$ 00.00" />
+                <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                  Project timeline
+                </h2>
+                <SelectMenu
+                  startDate={formData.startDate}
+                  endDate={formData.endDate}
+                  setFormData={setFormData}
+                  timeline={formData.projectTimeline}
+                  setTimeline={handleInputChange}
+                  formData={formData}
+                />
+              </div>
+              <div>
+                <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                  Estimation
+                </h2>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="Estimation"
+                  value={formData.Estimation}
+                  onChange={handleInputChange}
+                  className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                  placeholder="US$ 00.00"
+                />
               </div>
             </div>
             <div className="flex items-center justify-end p-2 md:p-3 border-t border-gray-200 rounded-b dark:border-gray-600">
@@ -62,6 +128,7 @@ const Modal = ({ isModalOpen , setIsModalOpen }: ModalPropType) => {
               <button
                 data-modal-hide="default-modal"
                 type="button"
+                onClick={handleNewProject}
                 className="py-2 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none rounded-lg border border-gray-200 bg-blue-700 text-white focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
               >
                 Add project

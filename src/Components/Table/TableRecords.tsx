@@ -1,5 +1,6 @@
 import React from "react";
 import { RiFileList2Line } from "react-icons/ri";
+import { IoIosArrowDropright } from "react-icons/io";
 
 type TableRecordsPropType = {
   value: any;
@@ -18,6 +19,9 @@ const TableRecords = ({ value, index }: TableRecordsPropType) => {
           />
         </div>
       </td>
+      <td>
+        <IoIosArrowDropright className="text-gray-500 cursor-pointer z-[1]" />
+      </td> 
       <td className="px-6 py-3 text-center">{index + 1}</td>
       <td className="px-6 py-3 text-blue-600 font-semibold text-left">
         {value.name}
@@ -49,7 +53,7 @@ const TableRecords = ({ value, index }: TableRecordsPropType) => {
         </span>
         <span className="px-2 text-gray-400 text-sm">{">"}</span>
         <span className="text-[13px] bg-gray-300 px-2 rounded-md py-0.5 text-gray-700 font-medium">
-          {value.timeline.startdate}
+          {value.timeline.endDate}
         </span>
       </td>
       <td className="px-6 py-3 text-center">{value.estimation}</td>

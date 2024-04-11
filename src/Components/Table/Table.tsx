@@ -3,13 +3,13 @@ import tabledata from "../../Data/TableData.json";
 import TableRecords from "./TableRecords";
 import TablePagination from "./TablePagination";
 
-const Table = () => {
+const Table = ({ data }: any) => {
   console.log(tabledata);
   return (
     <div>
       <div className="flex flex-col h-screen mb-6">
         <div className="flex-grow overflow-scroll pb-[200px]">
-          <table className="relative w-full border">
+          <table className="relative w-full border z-[-1]">
             <thead className="bg-gray-50">
               <tr>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] bg-gray-50">
@@ -21,6 +21,7 @@ const Table = () => {
                     />
                   </div>
                 </th>
+                <th></th>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] bg-gray-50">
                   #
                 </th>
@@ -48,7 +49,7 @@ const Table = () => {
               </tr>
             </thead>
             <tbody className="divide-y bg-white">
-              {tabledata.map((e: any, index: number) => (
+              {data.map((e: any, index: number) => (
                 <TableRecords value={e} index={index} key={index} />
               ))}
             </tbody>

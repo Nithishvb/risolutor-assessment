@@ -4,11 +4,12 @@ import "react-datepicker/dist/react-datepicker.css";
 
 type DatePickerPropTypes = {
   date: Date;
-  onSelectDate: (val: any) => void;
+  onSelectDate: (val: any,name: string) => void;
   placeholder: string;
+  name: string;
 };
 
-const DatePicker = ({ date, onSelectDate, placeholder }: DatePickerPropTypes) => {
+const DatePicker = ({ date, onSelectDate, placeholder , name }: DatePickerPropTypes) => {
   return (
     <div>
       <div className="relative">
@@ -25,7 +26,8 @@ const DatePicker = ({ date, onSelectDate, placeholder }: DatePickerPropTypes) =>
         </div>
         <ReactDatePicker
           selected={date}
-          onChange={(date) => onSelectDate(date)}
+          name={name}
+          onChange={(date) => onSelectDate(date, name)}
           placeholderText={placeholder}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[175px] h-[36px] ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         />

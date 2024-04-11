@@ -18,7 +18,7 @@ const DropDown = ({ isOpen }: DropDownPropTypes) => {
     <div>
       <div
         id="multi-dropdown"
-        className="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+        className="z-[-99] bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
         style={{ display: isOpen ? 'block' : 'none' }}
       >
         <ul

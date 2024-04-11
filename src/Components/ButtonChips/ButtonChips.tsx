@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 
+type ButtonChipsproptype = {
+    formData: any;
+    setFormData: (val: any) => void;
+}
+
 const BUTTON_CHIPS_DATA = [
     {
         id: 1,
@@ -23,11 +28,15 @@ const BUTTON_CHIPS_DATA = [
     },
 ]
 
-const ButtonChips = () => {
+const ButtonChips = ({ formData , setFormData }: ButtonChipsproptype) => {
 
     const [selectedChip, setSelectedChip] = useState<number>();
 
-  const handleClick = (index: number) => {
+  const handleClick = (index: number,val: string) => {
+    setFormData({
+        ...formData,
+        "resources": val,
+    });
     setSelectedChip(index);
   };
 
@@ -38,7 +47,7 @@ const ButtonChips = () => {
                 <div key={index} className={`bg-white px-2 p-[1px] rounded-lg border border-gray text-center cursor-pointer ${
                     selectedChip === index ? 'bg-blue-800 text-white' : ''
                   }`}
-                  onClick={() => handleClick(index)}>
+                  onClick={() => handleClick(index, e.title)}>
                     <span className="text-sm font-[400]">{e.title}</span>
                 </div>
             ))

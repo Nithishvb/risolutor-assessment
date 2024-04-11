@@ -7,7 +7,13 @@ import { FaPlus } from "react-icons/fa6";
 import DropDown from "../../Components/Dropdown/DropDown";
 import Modal from "../../Components/Modal/Modal";
 
-const TableControls = () => {
+type TableControlPropType = {
+  searchValue: string;
+  setSearchValue: (val: any) => void;
+  addNewproject: (val: any) => void;
+}
+
+const TableControls = ({ searchValue , setSearchValue , addNewproject }: TableControlPropType) => {
   const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
@@ -40,6 +46,8 @@ const TableControls = () => {
             <div>
               <input
                 type="text"
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
                 placeholder="Search"
                 className="outline-none text-md text-gray-700"
               />
@@ -57,7 +65,7 @@ const TableControls = () => {
           </div>
           <span>New project</span>
         </div>
-        <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} addNewproject={addNewproject} />
       </div>
     </div>
   );
