@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import TabSelect from "../TabSelect/TabSelect";
 import ButtonChips from "../ButtonChips/ButtonChips";
+import SelectMenu from "../SelectMenu/SelectMenu";
 
 type ModalPropType = {
     isModalOpen: boolean;
@@ -8,6 +9,9 @@ type ModalPropType = {
 }
 
 const Modal = ({ isModalOpen , setIsModalOpen }: ModalPropType) => {
+
+  const [timeline, setTimeline] = useState('');
+
   return (
     <div className="flex justify-center">
       <div
@@ -39,7 +43,7 @@ const Modal = ({ isModalOpen , setIsModalOpen }: ModalPropType) => {
               </div>
               <div>
                 <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Project timeline</h2>
-                <input type="text" className="border border-1 border-gray-600" />
+                <SelectMenu timeline={timeline} setTimeline={setTimeline} />
               </div>
               <div>
                 <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Estimation</h2>

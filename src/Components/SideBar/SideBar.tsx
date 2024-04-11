@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../../pages/Header/Header";
 import TableControls from "../../pages/Tablecontrols/TableControls";
+import TableTabControls from "../../pages/TableTabControls/TableTabControls";
+import Table from "../Table/Table";
 
 const SideBar = () => {
   return (
@@ -46,7 +48,7 @@ const SideBar = () => {
         </div>
       </aside>
 
-      <div className="sm:ml-[5rem]">
+      <div className="sm:ml-[5rem] h-screen overflow-hidden">
         <div className="p-4 bg-gray-100 rounded-lg dark:border-gray-700">
           <div>
             <Header />
@@ -54,6 +56,12 @@ const SideBar = () => {
         </div>
         <div className="p-4">
             <TableControls />
+        </div>
+        <div className="pl-4">
+            <TableTabControls />
+        </div>
+        <div className="pl-4 pt-2">
+          <Table />
         </div>
       </div>
     </div>
