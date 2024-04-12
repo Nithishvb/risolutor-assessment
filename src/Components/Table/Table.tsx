@@ -23,7 +23,7 @@ const Table = ({ data }: any) => {
                     />
                   </div>
                 </th>
-                <th></th>
+                <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] bg-gray-50"></th>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] bg-gray-50">
                   #
                 </th>
