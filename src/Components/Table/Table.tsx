@@ -2,6 +2,8 @@ import React from "react";
 import tabledata from "../../Data/TableData.json";
 import TableRecords from "./TableRecords";
 import TablePagination from "./TablePagination";
+import { FaCircleInfo } from "react-icons/fa6";
+
 
 const Table = ({ data }: any) => {
   console.log(tabledata);
@@ -9,7 +11,7 @@ const Table = ({ data }: any) => {
     <div>
       <div className="flex flex-col h-screen mb-6">
         <div className="flex-grow overflow-scroll pb-[200px]">
-          <table className="relative w-full border z-[-1]">
+          <table className="relative w-full border  pointer-events-auto">
             <thead className="bg-gray-50">
               <tr>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] bg-gray-50">
@@ -32,7 +34,12 @@ const Table = ({ data }: any) => {
                   PM
                 </th>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] font-medium bg-gray-50">
-                  STATUS
+                  <div className="flex items-center ml-8">
+                    STATUS  
+                    <span className="ml-2">
+                      <FaCircleInfo className="text-gray-400" />
+                    </span>
+                  </div>
                 </th>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] font-medium bg-gray-50 text-left">
                   LAST UPDATE
@@ -41,7 +48,12 @@ const Table = ({ data }: any) => {
                   RESOURCES
                 </th>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] font-medium bg-gray-50 text-left">
-                  PROJECT TIMELINE
+                  <div className="flex items-center">
+                    PROJECT TIMELINE  
+                    <span className="ml-2">
+                      <FaCircleInfo className="text-gray-400" />
+                    </span>
+                  </div>
                 </th>
                 <th className="sticky top-0 px-6 py-1 text-gray-500 text-[14px] font-medium bg-gray-50">
                   ESTIMATION

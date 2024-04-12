@@ -11,9 +11,12 @@ type TableControlPropType = {
   searchValue: string;
   setSearchValue: (val: any) => void;
   addNewproject: (val: any) => void;
+  applyFilter: (val: any) => void;
+  filterOptions: any;
+  setFilterOptions: any;
 }
 
-const TableControls = ({ searchValue , setSearchValue , addNewproject }: TableControlPropType) => {
+const TableControls = ({ searchValue , setSearchValue , addNewproject , filterOptions , setFilterOptions , applyFilter }: TableControlPropType) => {
   const [isFilterOpen, setIsFilterOpen] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
@@ -36,8 +39,8 @@ const TableControls = ({ searchValue , setSearchValue , addNewproject }: TableCo
               <FaAngleDown className="text-xs text-gray-600" />
             </div>
           </div>
-          <div className="absolute top-[133px]">
-            <DropDown isOpen={isFilterOpen} />
+          <div className="absolute top-[133px] z-[9]">
+            <DropDown isOpen={isFilterOpen} filterOptions={filterOptions} setFilterOptions={setFilterOptions} applyFilter={applyFilter} setIsModalOpen={setIsFilterOpen} />
           </div>
           <div className="flex items-center cursor-pointer p-1">
             <div className="px-2">

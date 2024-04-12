@@ -1,6 +1,7 @@
 import React from "react";
 import { RiFileList2Line } from "react-icons/ri";
 import { IoIosArrowDropright } from "react-icons/io";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 type TableRecordsPropType = {
   value: any;
@@ -24,7 +25,7 @@ const TableRecords = ({ value, index }: TableRecordsPropType) => {
       </td> 
       <td className="px-6 py-3 text-center">{index + 1}</td>
       <td className="px-6 py-3 text-blue-600 font-semibold text-left">
-        {value.name}
+          {value.name}
       </td>
       <td className="px-6 py-3 text-center flex justify-center">
         <img
@@ -44,7 +45,7 @@ const TableRecords = ({ value, index }: TableRecordsPropType) => {
       </td>
       <td className="px-6 py-3 text-center">
         <span className="bg-gray-300 px-2 py-0.5 rounded-md text-gray-700">
-          {value.Resources}
+          3
         </span>
       </td>
       <td className="px-6 py-3 text-left">
@@ -56,7 +57,7 @@ const TableRecords = ({ value, index }: TableRecordsPropType) => {
           {value.timeline.endDate}
         </span>
       </td>
-      <td className="px-6 py-3 text-center">{value.estimation}</td>
+      <td className="px-6 py-3 text-center">US$ {value.estimation}K</td>
     </tr>
   );
 };

@@ -5,9 +5,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "UI/UX",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "john"
   },
   {
     "id": 2,
@@ -15,9 +16,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Frontend",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "david"
   },
   {
     "id": 3,
@@ -25,9 +27,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Backend",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "kevin"
   },
   {
     "id": 4,
@@ -35,9 +38,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Full Stack",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "ben"
   },
   {
     "id": 5,
@@ -45,9 +49,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Graphic Designer",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "itachi"
   },
   {
     "id": 1,
@@ -55,9 +60,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "UI/UX",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "john"
   },
   {
     "id": 2,
@@ -65,9 +71,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Frontend",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "david"
   },
   {
     "id": 3,
@@ -75,9 +82,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Backend",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "kevin"
   },
   {
     "id": 4,
@@ -85,9 +93,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Full Stack",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "ben"
   },
   {
     "id": 5,
@@ -95,9 +104,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Graphic Designer",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "itachi"
   },
   {
     "id": 1,
@@ -105,9 +115,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "UI/UX",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "john"
   },
   {
     "id": 2,
@@ -115,9 +126,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Frontend",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "david"
   },
   {
     "id": 3,
@@ -125,9 +137,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Backend",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "kevin"
   },
   {
     "id": 4,
@@ -135,9 +148,10 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Full Stack",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "ben"
   },
   {
     "id": 5,
@@ -145,58 +159,9 @@
     "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
     "status": "On track",
     "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
+    "Resources": "Graphic Designer",
     "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
-  },
-  {
-    "id": 1,
-    "name": "John",
-    "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
-    "status": "On track",
-    "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
-    "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
-  },
-  {
-    "id": 2,
-    "name": "Alice",
-    "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
-    "status": "On track",
-    "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
-    "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
-  },
-  {
-    "id": 3,
-    "name": "Bob",
-    "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
-    "status": "On track",
-    "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
-    "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
-  },
-  {
-    "id": 4,
-    "name": "Emma",
-    "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
-    "status": "On track",
-    "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
-    "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
-  },
-  {
-    "id": 5,
-    "name": "Michael",
-    "pm_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qDF6sIfkyp8ffnJ0Cr_kaOlDMdBoSkj-KQ&usqp=CAU",
-    "status": "On track",
-    "Last_update": "15 Mar 2021, 12:47 PM",
-    "Resources": "3",
-    "timeline": { "startdate": "15 May 2021", "endDate": "15 May 2021" },
-    "estimation": "US$ 10.5K"
+    "estimation": "10.5",
+    "projectManagerName": "itachi"
   }
 ]
